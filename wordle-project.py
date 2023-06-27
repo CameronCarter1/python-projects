@@ -33,10 +33,10 @@ def print_guess(secret_word, guess):
 
 
 def get_guess(required_letters):
-    guess = input("Enter your guess: \n")
+    guess = input("\nEnter your guess:")
     while is_valid_guess(guess, required_letters) == False:
         print("Your guess must contain all yellow and green letters from your previous guesses.")
-        guess = input("Enter your guess: \n")
+        guess = input("Enter your guess: ")
         continue
     if is_valid_guess(guess, required_letters) == True:
         return guess
